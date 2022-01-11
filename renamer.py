@@ -16,7 +16,12 @@ for subdir, dirs, files in os.walk(dir):
     for filename in files:
         filepath = subdir + os.sep + filename
 
-        if filepath.endswith('.jpg') or filepath.endswith('.png') or filepath.endswith('.jpeg'):
+        if filepath.endswith('.jpg')
+            or filepath.endswith('.png')
+            or filepath.endswith('.jpeg')
+            or filepath.endswith('.gif')
+            or filepath.endswith('.jfif')
+            or filepath.endsiwth('.tiff'):
             ext = os.path.splitext(filename)[-1]
             newname = ''.join(random.choice(letters) for i in range(32))
             newpath = subdir + os.sep + newname + ext
